@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background-color:#D42900;}
+.grid-container > header, footer, article, nav {background-color:#FF853F;}
+
+.grid-container {
+	background-color:#FA6122;
+	grid-template-areas:
+    '. header  header  header  header  .'
+    '. nav     nav 	   nav 	   nav 	   .'
+    'text1 text1 text1 text2 text2 text2'
+    'text1 text1 text1 text3 text3 text3'
+    '. footer footer footer footer .';
+	}
+
+header {grid-area: header;}
+nav {grid-area: nav;} 
+footer {grid-area: footer;}
+.text1{grid-area: text1;}
+.text2{grid-area: text2;}
+.text3{grid-area: text3;}

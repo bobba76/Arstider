@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 20px; 
+	background-color:#C1EEFF;
+}
+
+h1{font-size: 40px; text-align: center;}
+
+header{grid-area: header;}
+.firsttext{grid-area: text1;}
+.secondtext{grid-area: text2;}
+footer{grid-area: footer;}
+.host{grid-area: hostArea;}
+.var{grid-area: varArea;}
+.sommar{grid-area: sommarArea;}
+.vinter{grid-area: vinterArea;}
+
+
+.grid-container {
+  display: grid;
+	grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(15px, auto);
+  grid-template-areas:
+    'header header     header  header     header     header'
+    '.      vinterArea varArea sommarArea hostArea   .'
+    '.      text1      text1   text2      text2      .'
+	'.		footer     footer  footer     footer     .';
+  grid-gap: 20px;
+  background-color:#AAEDFF;
+  margin: 20px;
+}
+
+
+.grid-container > header, footer, article, .firsttext, .secondtext, .host, .var, .vinter, .sommar {
+	background-color: aliceblue;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.host, .var, .vinter, .sommar {margin-left: auto; margin-right: auto;}
+

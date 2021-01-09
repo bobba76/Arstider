@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background-color:#83D48D;}
+.grid-container > header, footer, article, nav {background-color:#FFF5DC;}
+
+.grid-container {
+	background-color:#F6E599;
+	grid-template-areas:
+    '. header  header  header  header  .'
+    '. nav     nav 	   nav 	   nav 	   .'
+    'text1 text1 text1 text2 text2 text2'
+    'text3 text3 text3 text4 text4 text4'
+    '. footer footer footer footer .';
+	}
+
+header {grid-area: header;}
+nav {grid-area: nav;} 
+footer {grid-area: footer;}
+.text1{grid-area: text1;}
+.text2{grid-area: text2;}
+.text3{grid-area: text3;}
+.text4{grid-area: text4;}

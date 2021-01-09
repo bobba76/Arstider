@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background-color:#C1EEFF;}
+.grid-container > header, footer, article, nav {background-color: aliceblue;}
+
+.grid-container {
+	background-color:#AAEDFF;
+	grid-template-areas:
+    '. header  header  header  header  .'
+    '. nav     nav 	   nav 	   nav 	   .'
+    'text1 text1   text1  text2   text2  text2'
+    '. footer   footer   footer  footer .';
+	}
+
+header {grid-area: header;}
+nav {grid-area: nav;} 
+footer {grid-area: footer;}
+.text1{grid-area: text1;}
+.text2{grid-area: text2;}
